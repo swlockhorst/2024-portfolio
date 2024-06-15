@@ -80,7 +80,6 @@ export const WordMark = styled.div`
   display: flex;
   gap: 20px;
   align-items: center;
-  margin-bottom: 30px;
 `;
 
 const FooterNav = styled.ol`
