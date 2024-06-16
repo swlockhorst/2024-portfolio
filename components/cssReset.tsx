@@ -70,6 +70,7 @@ export const CSSReset = () => {
           text-rendering: optimizeLegibility;
           -webkit-font-smoothing: antialiased;
           text-size-adjust: none;
+          font-family: sans-serif;
         }
 
         footer,
