@@ -15,16 +15,19 @@ export const Work = () => {
           title={'Engineering Manager'}
           year={'2020-2024'}
         />
+
         <ExperienceTile
           companyName={'SourceStrike'}
           title={'Software Engineer'}
           year={'2019-2020'}
         />
+
         <ExperienceTile
           companyName={'Xome'}
           title={'Software Developer II'}
           year={'2018-2019'}
         />
+
         <ExperienceTile
           companyName={'Haven Agency'}
           title={'Front End Developer'}
