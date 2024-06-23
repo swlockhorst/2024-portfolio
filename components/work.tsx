@@ -6,10 +6,10 @@ import { ExperienceTile } from './experienceTile';
 export const Work = () => {
   return (
     <ContentContainer>
-      <Header>
+      <GradientHeader>
         <GradientText>Work Experience</GradientText>
-      </Header>
-      <table>
+      </GradientHeader>
+      <TileList>
         <ExperienceTile
           companyName={'Fisker Inc.'}
           title={'Engineering Manager'}
@@ -33,11 +33,18 @@ export const Work = () => {
           title={'Front End Developer'}
           year={'2016-2018'}
         />
-      </table>
+      </TileList>
     </ContentContainer>
   );
 };
 
-const Header = styled.h2`
+const GradientHeader = styled.h2`
   font-size: 2.7rem;
+`;
+
+const TileList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 100px;
 `;

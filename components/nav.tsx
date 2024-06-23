@@ -37,6 +37,7 @@ const NavInner = styled.div`
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
 
   padding: 20px 0;
 `;

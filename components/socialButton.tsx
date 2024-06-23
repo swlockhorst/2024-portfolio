@@ -15,6 +15,12 @@ export const SocialButton = ({ children, link }) => {
 const Container = styled.div`
   position: relative;
 
+  &:hover {
+    path {
+      fill: url(#main-gradient);
+    }
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -45,6 +51,7 @@ const Wrapper = styled.a`
 
   &:link {
   }
+
   &:visited {
     color: #fff;
   }
@@ -62,6 +69,9 @@ const Social = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+  }
 `;
 
 const Icon = styled.div`
