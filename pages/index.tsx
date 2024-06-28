@@ -18,20 +18,20 @@ export default function Home() {
         <svg width='0' height='0'>
           <defs>
             <linearGradient id='main-gradient'>
-              <stop offset='0%' stop-color='#b16cea' />
-              <stop offset='30%' stop-color='#ff5e69' />
-              <stop offset='55%' stop-color='#ff8a56' />
-              <stop offset='80%' stop-color='#ffa84b' />
+              <stop offset='0%' stopColor='#b16cea' />
+              <stop offset='30%' stopColor='#ff5e69' />
+              <stop offset='55%' stopColor='#ff8a56' />
+              <stop offset='80%' stopColor='#ffa84b' />
             </linearGradient>
           </defs>
         </svg>
 
         <Nav />
-        {/* about */}
+
         <About />
-        {/* work experience */}
+
         <Work />
-        {/* projects */}
+
         <Projects />
       </main>
 

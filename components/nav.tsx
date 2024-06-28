@@ -9,22 +9,33 @@ export const Nav = () => {
     <NavContainer>
       <ContentContainer>
         <NavInner>
-          <WordMark>
-            <Logo />
-            <Name>Steven Lockhorst</Name>
-          </WordMark>
+          <LogoContainer>
+            <WordMark>
+              <Logo />
+              <Name>Steven Lockhorst</Name>
+            </WordMark>
+          </LogoContainer>
 
           <Menu>
-            <li>About</li>
-            <li>Work</li>
-            <li>Projects</li>
+            <li>
+              <a href='#about'>About</a>
+            </li>
+            <li>
+              <a href='#work'>Work</a>
+            </li>
+            <li>
+              <a href='#projects'>Projects</a>
+            </li>
           </Menu>
 
-          <div>
-            <Button>
+          <ButtonContainer>
+            <Button
+              href={'https://www.linkedin.com/in/steven-lockhorst-6b740a94/'}
+              target='_blank'
+            >
               <ButtonInner>Lets Talk</ButtonInner>
             </Button>
-          </div>
+          </ButtonContainer>
         </NavInner>
       </ContentContainer>
     </NavContainer>
@@ -35,18 +46,59 @@ const NavContainer = styled.div``;
 
 const NavInner = styled.div`
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-
+  /* justify-content: space-between; */
   padding: 20px 0;
+  gap: 30px;
+`;
+
+const LogoContainer = styled.div`
+  flex: 1;
+  order: 1;
+  display: flex;
+  justify-items: center;
+  /* background: red; */
 `;
 
 const Menu = styled.ul`
+  order: 3;
   display: flex;
   gap: 30px;
+  min-width: 100%;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    order: 2;
+    min-width: initial;
+  }
+
+  a {
+    text-decoration: none;
+    &:link {
+      color: #fff;
+    }
+    &:visited {
+      color: #fff;
+    }
+    &:hover {
+      color: #ccc;
+    }
+    &:active {
+      color: #fff;
+    }
+  }
 `;
 
 const ButtonInner = styled.span`
   font-weight: 600;
+`;
+
+const ButtonContainer = styled.div`
+  order: 1;
+
+  @media (min-width: 768px) {
+    order: 3;
+  }
 `;

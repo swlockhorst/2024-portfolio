@@ -6,7 +6,7 @@ import { SocialButton } from './socialButton';
 
 export const About = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id={'about'}>
       <ContentContainer>
         <SectionHeading>
           <span>Hi, I am</span>

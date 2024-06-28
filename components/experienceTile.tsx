@@ -17,9 +17,13 @@ export const ExperienceTile = ({ companyName, title, year }) => {
 
 const Tile = styled.div`
   position: relative;
-  padding: 30px;
+  padding: 30px 0;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 768px) {
+    /* padding: 30px; */
+  }
 
   &: after {
     content: '';

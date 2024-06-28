@@ -5,7 +5,7 @@ import { ExperienceTile } from './experienceTile';
 
 export const Work = () => {
   return (
-    <ContentContainer>
+    <ContentContainer id={'work'}>
       <GradientHeader>
         <GradientText>Work Experience</GradientText>
       </GradientHeader>

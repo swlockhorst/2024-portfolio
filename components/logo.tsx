@@ -10,7 +10,7 @@ export const Logo = () => {
 
 const LogoContainer = styled.div`
   border-radius: 50%;
-  width: 50px;
+  min-width: 50px;
   height: 50px;
   background-image: linear-gradient(
     to right,
