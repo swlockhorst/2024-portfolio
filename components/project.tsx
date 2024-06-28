@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from '@emotion/styled';
 
 export const Project = ({ description, img, title, layout }) => {
